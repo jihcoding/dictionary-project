@@ -1,9 +1,22 @@
+body {
+  background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+}
+
+.App {
+  max-width: 960px;
+  margin: 40px auto;
+}
+
 .App-header {
-  margin: 50px 0;
+  margin: 65px 0;
 }
 
 .App-logo {
-  max-width: 140px;
+  max-width: 100px;
   display: block;
-  margin: 0 auto;
+}
+
+.App-footer {
+  text-align: center;
+  margin: 80px 0;
 }
