@@ -1,22 +1,31 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./Dictionary.css";
 
 export default function Dictionary() {
-let [keyword, setKeyword] = useState("");
+  let [keyword, setKeyword] = useState("");
 
-function search(event) {
+  function handleResponse(response) {
+    console.log(response);
+  }
+
+  function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword} definition `);
-}
-function handleKeywordChange(event) {
+    alert(`Searching for ${keyword} definition`);
+
+    let apiUrl = "https://api.dictionaryapi.dev/api/v2/entries/en_US/hello";
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleKeywordChange(event) {
     setKeyword(event.target.value);
-}
+  }
 
   return (
-  <div className="Chakra">
+    <div className="Chakra">
       <form onSubmit={search}>
-          <input type="search" onChange={handleKeywordChange} />
+        <input type="search" onChange={handleKeywordChange} />
       </form>
-  </div>
+    </div>
   );
 }
