@@ -5,22 +5,23 @@
 .Phonetic a {
     border: 1px solid transparent;
     margin-right: 10px;
-    background-color:#eaceb4; 
-    color: rgb(94, 92, 92);
+    background-color: #c7878c; 
+    color: white;
     text-decoration: none;
-    padding: 10px 17px;
+    padding: 12px 19px;
     font-size: 15px;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 18px;
     transition: all 150ms ease-in-out;
 }
 
 .Phonetic a:hover {
-    background:#fed39f;
-    color: white;
+    background:#b47275;
+    color: rgb(73, 71, 71);
 }
 
 .Phonetic .text {
     opacity: 0.5;
     font-weight: bold;
+    font-size: 19px;
 }
