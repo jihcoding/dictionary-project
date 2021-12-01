@@ -9,13 +9,36 @@ export default function App() {
         <header className="App-header">
           <img src={logo} className="App-logo img-fluid" alt="logo" />
         </header>
-        <main>
-          <Dictionary defaultKeyword="Chakra"/>
-        </main>
-        <footer className="App-footer">
-          <small>Coded by Argielyn Lapid</small>
-        </footer>
       </div>
+      <main>
+        <Dictionary defaultKeyword="hello" />
+      </main>
+      <footer className="App-footer">
+        This project was coded by{" "}
+        <a
+          href="https://www.linkedin.com/in/argielyn-lapid-997565b5/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Argielyn Lapid
+        </a>
+        , open-sourced on{" "}
+        <a
+          href="https://github.com/jihcoding/dictionary-project"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>{" "}
+        and hosted on{" "}
+        <a
+          href="https://focused-ramanujan-770e5f.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Netlify
+        </a>
+      </footer>
     </div>
   );
 }
